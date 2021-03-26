@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project nomina -->
+<!-- Saved: 2011-07-14, 15:41:22 -->
+<!-- Copyright (C) 2011 Wuelfhis Asuaje, wasuaje@hotmail.com -->
+<Project version="4.6">
+  <Language></Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author>Wuelfhis Asuaje</Author>
+  <Email>wasuaje@hotmail.com</Email>
+  <Sources>
+    <Source>nomina.py</Source>
+    <Source>__init__.py</Source>
+    <Source>ui/Ui_principal.py</Source>
+    <Source>ui/Ui_empresas.py</Source>
+    <Source>empresas.py</Source>
+    <Source>ui/__init__.py</Source>
+    <Source>ui/Ui_busqueda.py</Source>
+    <Source>ui/Ui_botonera.py</Source>
+    <Source>principal.py</Source>
+    <Source>recurso_rc.py</Source>
+    <Source>departamentos.py</Source>
+    <Source>cargos.py</Source>
+    <Source>ui/Ui_empleado_tipo.py</Source>
+    <Source>ui/Ui_nomina_tipo.py</Source>
+    <Source>bancos.py</Source>
+    <Source>ui/Ui_bancos.py</Source>
+    <Source>ui/Ui_banco_cuenta.py</Source>
+    <Source>ui/Ui_empleados.py</Source>
+    <Source>prueba.py</Source>
+    <Source>busqueda2.py</Source>
+    <Source>ui/Ui_departamentos.py</Source>
+    <Source>ui/Ui_cargos.py</Source>
+  </Sources>
+  <Forms>
+    <Form>ui/principal.ui</Form>
+    <Form>ui/empresas.ui</Form>
+    <Form>ui/busqueda.ui</Form>
+    <Form>ui/botonera.ui</Form>
+    <Form>ui/departamentos.ui</Form>
+    <Form>ui/cargos.ui</Form>
+    <Form>ui/empleado_tipo.ui</Form>
+    <Form>ui/nomina_tipo.ui</Form>
+    <Form>ui/bancos.ui</Form>
+    <Form>ui/banco_cuenta.ui</Form>
+    <Form>ui/empleados.ui</Form>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+    <Resource>recurso.qrc</Resource>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+    <Other>pruebas</Other>
+  </Others>
+  <MainScript>nomina.py</MainScript>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>

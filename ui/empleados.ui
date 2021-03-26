@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>465</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Empleados</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frmbotonera">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <zorder>tabWidget</zorder>
+       <zorder>tabWidget</zorder>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>2</width>
+         <height>2</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Personales</string>
+        </attribute>
+        <widget class="QFrame" name="frame_2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>441</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>10</y>
+            <width>70</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>Sexo:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>Apellidos:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>Rif.:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Tlf. Cel.:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>Edad:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>6</y>
+            <width>131</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLineEdit" name="lncodigo"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lnnombres">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lncedula"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lntlfhab">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="lnfecnac">
+             <property name="date">
+              <date>
+               <year>1900</year>
+               <month>1</month>
+               <day>1</day>
+              </date>
+             </property>
+             <property name="maximumDateTime">
+              <datetime>
+               <hour>23</hour>
+               <minute>59</minute>
+               <second>59</second>
+               <year>7999</year>
+               <month>12</month>
+               <day>28</day>
+              </datetime>
+             </property>
+             <property name="displayFormat">
+              <string>dd/MM/yyyy</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>10</y>
+            <width>121</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLineEdit" name="lnsexo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>5</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="inputMask">
+              <string>&gt;A; </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lnapellidos"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lnrif">
+             <property name="inputMask">
+              <string>A-99999999-9; </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lntlfcel"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lncodigo_3">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>0</y>
+            <width>69</width>
+            <height>171</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Codigo:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>Nombres:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Cedula:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Tlf. Hab.:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>Fec. Nac.:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>175</y>
+            <width>77</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Direccion1:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Direccion2:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>E-mail.:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>170</y>
+            <width>341</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QPlainTextEdit" name="txtdir1"/>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="txtdir2"/>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lnemail">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>Nomina</string>
+        </attribute>
+        <widget class="QFrame" name="frame_3">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>421</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>20</y>
+            <width>321</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Fecha Ingreso:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Tipo de Empleado:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_27">
+               <property name="text">
+                <string>Departamento:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Cargo:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Tipo de Nomina:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Banco p/Nomina:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Cuenta nomina:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>Fecha de Egreso:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QDateEdit" name="lnfecingreso">
+               <property name="date">
+                <date>
+                 <year>1900</year>
+                 <month>1</month>
+                 <day>1</day>
+                </date>
+               </property>
+               <property name="displayFormat">
+                <string>dd/MM/yyyy</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbtipemp"/>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbdpto"/>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbcargo"/>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbtipnom"/>
+             </item>
+             <item>
+              <widget class="QComboBox" name="cmbbanco"/>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lncuenta">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="lnfecegreso">
+               <property name="date">
+                <date>
+                 <year>1900</year>
+                 <month>1</month>
+                 <day>1</day>
+                </date>
+               </property>
+               <property name="displayFormat">
+                <string>dd/MM/yyyy</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Sueldo/Salario</string>
+        </attribute>
+        <widget class="QFrame" name="frame_4">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>431</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushDel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>140</y>
+            <width>31</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="icon">
+           <iconset resource="../recurso.qrc">
+            <normaloff>:/iconos2/img2/cross.png</normaloff>:/iconos2/img2/cross.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>20</y>
+            <width>41</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Diario</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lnssem">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>40</y>
+            <width>91</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>91</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Desde Fecha:</string>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="lnfecsueldo">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>80</y>
+            <width>110</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="displayFormat">
+           <string>dd/MM/yyyy</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushAdd">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>110</y>
+            <width>31</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="icon">
+           <iconset resource="../recurso.qrc">
+            <normaloff>:/iconos2/img2/add.png</normaloff>:/iconos2/img2/add.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>20</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mensual</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lnsmen">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>40</y>
+            <width>111</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>20</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Semanal</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Sueldo:</string>
+          </property>
+         </widget>
+         <widget class="QTableView" name="tableView">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>111</y>
+            <width>361</width>
+            <height>181</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lnsdiario">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>40</y>
+            <width>91</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Foto</string>
+        </attribute>
+        <widget class="QFrame" name="frame_5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>431</width>
+           <height>311</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="btnfoto">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>280</y>
+            <width>31</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>30</y>
+            <width>231</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <widget class="QLabel" name="lblfoto">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>211</width>
+             <height>211</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>FOTO</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLineEdit" name="lnfoto">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>280</y>
+            <width>161</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>465</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNuevo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionModificar"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionEliminar"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuNuevo"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionModificar">
+   <property name="text">
+    <string>Modificar</string>
+   </property>
+  </action>
+  <action name="actionEliminar">
+   <property name="text">
+    <string>Eliminar</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lncodigo</tabstop>
+  <tabstop>lnsexo</tabstop>
+  <tabstop>lnnombres</tabstop>
+  <tabstop>lnapellidos</tabstop>
+  <tabstop>lncedula</tabstop>
+  <tabstop>lnrif</tabstop>
+  <tabstop>lntlfhab</tabstop>
+  <tabstop>lntlfcel</tabstop>
+  <tabstop>lncodigo_3</tabstop>
+  <tabstop>txtdir1</tabstop>
+  <tabstop>txtdir2</tabstop>
+  <tabstop>lnemail</tabstop>
+  <tabstop>cmbtipemp</tabstop>
+  <tabstop>cmbdpto</tabstop>
+  <tabstop>cmbcargo</tabstop>
+  <tabstop>cmbtipnom</tabstop>
+  <tabstop>cmbbanco</tabstop>
+  <tabstop>lncuenta</tabstop>
+  <tabstop>lnsmen</tabstop>
+  <tabstop>lnssem</tabstop>
+  <tabstop>lnsdiario</tabstop>
+  <tabstop>pushAdd</tabstop>
+  <tabstop>pushDel</tabstop>
+  <tabstop>lnfoto</tabstop>
+  <tabstop>btnfoto</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../recurso.qrc"/>
+ </resources>
+ <connections/>
+</ui>

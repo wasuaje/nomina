@@ -1,0 +1,75 @@
+
+ojo no viene por defecto para que funcione sql
+
+sudo apt-get install python-qt4-sql
+
+
+Configura en empresa
+calculo de vacaciones por ultimo mes, sueldo promedio mes
+calculo de utilidades promedio anual o sueldo diario, o devengado al año
+
+
+1)Introducir variacion de nomina para todos los trabajadores con sus acumulados
+
+Acum. Sdo. Año Anterior/Días Adic. Prestaciones
+Acum. Inicial Prestaciones Sociales
+Acum. Inicial Intereses de Prestaciones Sociales
+Acum. Inicial Anticipos de Prestaciones Sociales
+Acum. Inicial Anticipos de Utilidades
+Acum. Sdo. Año Inicio Operaciones
+Acum. Inicial Días de Vacaciones Vencidas
+Acum. Inicial Días de Bono Vacacional Vencido
+Acum. Inicial de Intereses Pagados
+Acum. Inicial de Fondo de Ahorro
+
+
+2) Calcular a fin de mes
+
+Provisión de Bono de Fin de Año
+Provisión de Utilidades
+Provisión de Bono Vacacional
+
+3) Para todas las nomina estos conceptos
+
+Ausencias no Justificadas (Días)
+
+4) Ojo con esto constantes
+
+Factor del Seguro Social Obligatorio(Empleados)
+Factor del Seguro Paro Forzoso(Empleados)
+Factor del Seguro Social Obligatorio(Patrono)
+Factor del Seguro Paro Forzoso(Patrono)
+Factor de la Ley de Política Habitacional (Empleados)
+Factor de la Ley de Política Habitacional (Patrono)
+
+ para tablas
+ Tope de Edad Hombres
+ Tope de Edad Mujeres
+ Tope del Seguro Social Obligatorio(Empleados)
+ Tope del Seguro Social Obligatorio(Patrono)
+ Tope del Seguro de Paro Forzoso(Empleados)
+ Tope del Seguro de Paro Forzoso(Patrono)
+
+5)
+
+
+Conceptos
+codigo	|nombre			|comentario	|expresion	|periodos		|tipo	|tabla	|seimprime	|seacumula
+
+A01	Sueldos y Salarios	dapagar()+'dias' sueldoq()*sdiario()	(blancotodos)	A			1	1
+D02	Falta injustificada	  		 finjust()*sdiario()			D		A	1	1
+D03	Ahorro Viv Volunta			 sueldom()/12*54*ffaov()/100		D			1	1
+D04	Paro forzoso				 sueldom()/12*54*fpf()/100		D			1	1
+D05	SSobligatorio				 sueldom()/12*54*fsso()/100		D			1	1
+
+
+
+Al cerrar:
+Todos los conceptos que sean deducciones tabla P se agrega un pago de prestamos
+Todos los conceptos que sean deducciones tabla A 
+
+
+
+
+
+

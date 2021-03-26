@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>818</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>170</y>
+      <width>331</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/emp/Cuenta_nomina.jpg</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>818</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="action_Salir"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigurar">
+    <property name="title">
+     <string>&amp;Configuracion</string>
+    </property>
+    <addaction name="action_Empresa"/>
+    <addaction name="action_Departamentos"/>
+    <addaction name="actionCargos"/>
+    <addaction name="separator"/>
+    <addaction name="action_Bancos_cuentas"/>
+    <addaction name="separator"/>
+    <addaction name="actionTipos_de_Empleado"/>
+    <addaction name="actionEmpleados"/>
+   </widget>
+   <widget class="QMenu" name="menuMovimientos">
+    <property name="title">
+     <string>&amp;Movimientos</string>
+    </property>
+    <widget class="QMenu" name="menuEmpleados">
+     <property name="title">
+      <string>&amp;Empleados</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionAusencias"/>
+     <addaction name="actionPrestamos"/>
+     <addaction name="actionVacaciones"/>
+    </widget>
+    <widget class="QMenu" name="menuNomina">
+     <property name="title">
+      <string>&amp;Nomina</string>
+     </property>
+     <addaction name="action_Tipos_de_Nomina"/>
+     <addaction name="actionTipos_de_Concepto"/>
+     <addaction name="actionConceptos"/>
+     <addaction name="actionConceptos_por_Nomina"/>
+     <addaction name="actionVariaciones"/>
+     <addaction name="actionGenerar_Nomina"/>
+    </widget>
+    <addaction name="menuEmpleados"/>
+    <addaction name="menuNomina"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;?</string>
+    </property>
+    <addaction name="action_Acerca"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>&amp;Reportes</string>
+    </property>
+    <addaction name="actionBasicos"/>
+    <addaction name="actionNomina_2"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuConfigurar"/>
+   <addaction name="menuMovimientos"/>
+   <addaction name="menuReportes"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Empresa"/>
+   <addaction name="action_Departamentos"/>
+   <addaction name="actionCargos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Empresa">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/home_32.png</normaloff>:/iconos/img/home_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Empresa</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_Departamentos">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/activity_monitor.png</normaloff>:/iconos/img/activity_monitor.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Departamentos</string>
+   </property>
+  </action>
+  <action name="actionCargos">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/address_book_32.png</normaloff>:/iconos/img/address_book_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cargos</string>
+   </property>
+  </action>
+  <action name="action_Bancos_cuentas">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/window_app_list_32.png</normaloff>:/iconos/img/window_app_list_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Bancos/cuentas</string>
+   </property>
+  </action>
+  <action name="action_Tipos_de_Nomina">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/book_32.png</normaloff>:/iconos/img/book_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Tipos de Nomina</string>
+   </property>
+  </action>
+  <action name="actionTipos_de_Empleado">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/users_business_32.png</normaloff>:/iconos/img/users_business_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>T&amp;ipos de Empleado</string>
+   </property>
+  </action>
+  <action name="actionEmpleados">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/user_business_32.png</normaloff>:/iconos/img/user_business_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;mpleados</string>
+   </property>
+  </action>
+  <action name="action_Salir">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/close_32.png</normaloff>:/iconos/img/close_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAusencias">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/user_business_close_32.png</normaloff>:/iconos/img/user_business_close_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Ausencias</string>
+   </property>
+  </action>
+  <action name="actionPrestamos">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/user_business_chart_32.png</normaloff>:/iconos/img/user_business_chart_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Prestamos</string>
+   </property>
+  </action>
+  <action name="actionVacaciones">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/user_business_info_32.png</normaloff>:/iconos/img/user_business_info_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Vacaciones</string>
+   </property>
+  </action>
+  <action name="actionTipos_de_Concepto">
+   <property name="text">
+    <string>T&amp;ipos de Concepto</string>
+   </property>
+  </action>
+  <action name="actionConceptos">
+   <property name="text">
+    <string>&amp;Conceptos</string>
+   </property>
+  </action>
+  <action name="actionVariaciones">
+   <property name="text">
+    <string>&amp;Variaciones</string>
+   </property>
+  </action>
+  <action name="actionGenerar_Nomina">
+   <property name="icon">
+    <iconset resource="../recurso.qrc">
+     <normaloff>:/iconos/img/page_table_add_32.png</normaloff>:/iconos/img/page_table_add_32.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Generar Nomina</string>
+   </property>
+  </action>
+  <action name="action_Acerca">
+   <property name="text">
+    <string>&amp;Acerca</string>
+   </property>
+  </action>
+  <action name="actionConceptos_por_Nomina">
+   <property name="text">
+    <string>Conceptos por Nomina</string>
+   </property>
+  </action>
+  <action name="actionBasicos">
+   <property name="text">
+    <string>Basicos</string>
+   </property>
+  </action>
+  <action name="actionNomina_2">
+   <property name="text">
+    <string>Nomina</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../recurso.qrc"/>
+ </resources>
+ <connections/>
+</ui>
